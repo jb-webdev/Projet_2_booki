@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Style css -->
-    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/normalize.min.css">
     <link rel="stylesheet" href="./styles/index.css">
     <!-- GoogleFonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,400;1,600&display=swap" rel="stylesheet"> 
-
     <!-- FontAwesome -->
     <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.min.css"  />
     <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/js/all.min.js">
@@ -21,6 +20,116 @@
     <title>Booki</title>
 </head>
 <body>
-    
+    <!-- HEADER -->
+    <header id="header">
+        <a href="index.html" class="link-logo">
+            <img class="link-logo-img" 
+                src="./img/images/logo/Booki@3x.png" 
+                alt="Logo application Booki"
+                >
+        </a>
+        <nav class="nav">
+            <ul class="nav-ul">
+                <li class="nav-li">
+                    <a href="#hebergements" class="nav_link">Hébergements</a>
+                </li>
+                <li class="nav-li">
+                    <a href="./pages/activites.html" class="nav_link">Activités</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <aside class="main-aside">
+            <h1 class="main-title">Trouver votre hébergement pour des vacances de reves</h1>
+            <p class="main-aside-text">En plein centre ville ou en pleine nature</p>
+            <form class="main-form" method="post">
+                <span class="main-form-span">
+                    <i class="fas fa-location-dot"></i>
+                </span>
+                <input class="main-form-input" 
+                    type="text" 
+                    value="" />
+                <button class="main-form-button" type="submit" >
+                    <span class="main-form-button-text">Rechercher</span>
+                    <i class="fas fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <div class="main-filter">
+                <p class="main-filter-title">Filtre</p>
+                <div class="main-filter-wrapper">
+                    <div class="main-filter-item">
+                        <span class="main-filter-item-boxIcon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </span>
+                        <p class="main-filter-item-text">Economique</p>
+                    </div>
+                    <div class="main-filter-item">
+                        <span class="main-filter-item-boxIcon">
+                            <i class="fas fa-child"></i>
+                        </span>
+                        <p class="main-filter-item-text">Familliale</p>
+                    </div>
+                    <div class="main-filter-item">
+                        <span class="main-filter-item-boxIcon">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                        <p class="main-filter-item-text">Romantique</p>
+                    </div>
+                    <div class="main-filter-item">
+                        <span class="main-filter-item-boxIcon">
+                            <i class="fas fa-dog"></i>
+                        </span>
+                        <p class="main-filter-item-text">Animaux autorisés</p>
+                    </div>
+                </div>
+            </div>
+            <p class="main-info-text">
+                <span class="main-aside-span-icon">
+                    <i class="fas fa-info "></i>
+                </span>
+                Plus de 500 logements sont disponible dans cette ville
+            </p>
+        </aside>
+    </main>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer-wrapper">
+            <h3 class="footer-wrapper-title">A propos</h3>
+            <ul class="footer-wrapper-ul">
+                <li class="footer-wrapper-li">
+                    <a href="#" class="footer-wrapper-link">Fonctionnement du site</a>
+                </li>
+                <li class="footer-wrapper-li">
+                    <a href="#" class="footer-wrapper-link">Conditions générales de vente</a>
+                </li>
+                <li class="footer-wrapper-li">
+                    <a href="#" class="footer-wrapper-link">Données et confidentialité</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-wrapper">
+            <h3 class="footer-wrapper-title">Nos hébergements</h3>
+            <ul class="footer-wrapper-ul">
+                <li class="footer-wrapper-li">
+                    <a href="#" class="footer-wrapper-link">Chartes qualité</a>
+                </li>
+                <li class="footer-wrapper-li">
+                    <a href="#" class="footer-wrapper-link">Soumettre votre hôtel</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-wrapper">
+            <h3 class="footer-wrapper-title">Assistance</h3>
+            <ul class="footer-wrapper-ul">
+                <li class="footer-wrapper-li">
+                    <a href="#" class="footer-wrapper-link">Centre d'aide</a>
+                </li>
+                <li class="footer-wrapper-li">
+                    <a href="#" class="footer-wrapper-link">Nous contacter</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
