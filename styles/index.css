@@ -445,8 +445,8 @@ body{
 }
 .s-left-card {
     background-color: var(--color-4);
-    width: 250px;
-    height: 300px;
+    width: 280px;
+    height: 250px;
     margin: 10px 10px 10px 10px;
     padding: 0;
     border-radius: 10px;
@@ -484,7 +484,6 @@ body{
     font-weight: bold;
 }
 .s-left-card-stars .fas{
-    margin-top: 15px;
     margin-left: 10px;
     font-size: 1.22vw;
 }
@@ -634,6 +633,9 @@ body{
 
 /*ECRANS*/
 @media screen and (max-width: 1429px){
+    .s-right{
+        height: auto;
+    }
     .s-right-card{
         width: 80%;
     }
@@ -653,6 +655,11 @@ body{
         flex-direction: row;
     }
     
+}
+@media screen and (max-width: 1255px){
+    .s-right{
+        height: auto;
+    }
 }
 @media screen and (max-width: 1000px){
    .s-right-box-cards{
