@@ -388,6 +388,146 @@ body{
     
 }
 
+/* ============================================================================================== */
+/* ====================================  ARTICLE STYLES  ========================================= */
+/* ============================================================================================== */
+
+.main-article {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+.star-valid {
+    color: var(--color-1);
+}
+.star-none {
+    color: var(--color-3);
+}
+ a {
+     text-decoration: none;
+ }
+/* ===== SECTION ARTICLE RESPONSIVE ===== */
+
+/*ECRANS*/
+@media screen and (max-width: 1260px) {
+    .main-article {
+        flex-direction: column-reverse;
+    }
+
+}
+/* ============================================================================================== */
+/* ====================================  S-LEFT STYLES  ========================================= */
+/* ============================================================================================== */
+
+.s-left{
+    background-color: var(--color-3);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding-bottom: 30px;
+      
+}
+.s-left-title {
+    font-size: 2.8em;
+    margin-left: 3%;
+}
+.s-left-box-cards {
+    background-color: var(--color-3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.s-left-card {
+    background-color: var(--color-4);
+    width: 250px;
+    height: 300px;
+    margin: 10px 10px 10px 10px;
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 4px solid #ffffff;
+    cursor: pointer;
+}
+.s-left-card:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.s-left-card-image {
+    width: 100%;
+    margin: 0;
+    height: 60%;
+    overflow: hidden;
+}
+.s-left-card-image img {
+	width: 100%;
+    height: 100%;
+    
+}
+.s-left-card-title {
+    margin: 0;
+    margin-top: 20px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+.s-left-card-text{
+    font-size: 18px;
+    padding-left: 10px;
+    margin: 0;
+}
+.s-left-card-text span{
+    font-size: 1.22vw;
+    font-weight: bold;
+}
+.s-left-card-stars .fas{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 1.22vw;
+}
+
+
+/* ===== S-LEFT RESPONSIVE ===== */
+
+/*ECRANS*/
+@media screen and (max-width: 1260px) {
+    .s-left{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 750px) {
+    .s-left-card {
+        width: 100%;
+        height: auto;
+    }
+    .s-left-card-image {
+        max-height: 320px;
+    }
+    .s-left-card-title {
+        margin-top: 15px;
+    }
+    .s-left-card-text{
+        font-size: 2.2em;
+        margin-top: 15px;
+    }
+    .s-left-card-text span{
+        font-size: 22px;
+    }
+    .s-left-card-stars .fas{
+        margin-top: 25px;
+        font-size: 2em;
+    }
+}
+
+/*MOBILES*/   
+@media screen and (max-width: 768px) {
+}
 
 
 /* ============================================================================================== */
