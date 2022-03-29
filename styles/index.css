@@ -28,6 +28,9 @@ body{
    font-family: var(--font-family);
    font-size: var(--fontsize-1);
 }
+a {
+    text-decoration: none;
+}
 
 /* ============================================================================================== */
 /* ===================================== HEADER STYLES  ========================================= */
@@ -85,11 +88,7 @@ body{
 
 /* =============== HEADER RESPONSIVE =============== */
 
-/*ECRANS*/
-@media screen and (min-width: 992px) {}
-
-/*TABLETTES*/    
-@media screen and (max-width: 992px) {}
+/*TABLETTES*/
 @media screen and (min-width: 768px){
     /* animation link header */
     #header .nav-li {
@@ -114,7 +113,6 @@ body{
         border-top: 2px solid var(--color-1);
     }
 }
-
 /*MOBILES*/   
 @media screen and (max-width: 768px) {
 
@@ -185,7 +183,6 @@ body{
     font-size: 2.2em;
 }
 
-
 /* FORM RESEARCH */
 .main-form {
     display: flex;
@@ -228,13 +225,11 @@ body{
     font-size: 2em;
     margin: 0;
 }
-
 .main-form-button:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 /* FILTER */
-
 .main-filter {
     display: flex;
     flex-direction: row;
@@ -337,7 +332,6 @@ body{
     .main-title {
         font-size: 3vw;
     }
-    
 }
 @media screen and (min-width: 992px) {
     .main-title {
@@ -360,7 +354,6 @@ body{
     }
     .main-filter-item {
         width: 250px;
-        
     }
 }
 /*MOBILES*/   
@@ -384,8 +377,6 @@ body{
     .main-info-text{
         font-size: 1.8em;
     }
-    
-    
 }
 
 /* ============================================================================================== */
@@ -406,9 +397,6 @@ body{
 .star-none {
     color: var(--color-3);
 }
- a {
-     text-decoration: none;
- }
 /* ===== SECTION ARTICLE RESPONSIVE ===== */
 
 /*ECRANS*/
@@ -416,7 +404,6 @@ body{
     .main-article {
         flex-direction: column-reverse;
     }
-
 }
 /* ============================================================================================== */
 /* ====================================  S-LEFT STYLES  ========================================= */
@@ -430,7 +417,6 @@ body{
     justify-content: space-around;
     border-radius: 10px;
     padding-bottom: 30px;
-      
 }
 .s-left-title {
     font-size: 2.8em;
@@ -466,7 +452,6 @@ body{
 .s-left-card-image img {
 	width: 100%;
     height: 100%;
-    
 }
 .s-left-card-title {
     margin: 0;
@@ -496,7 +481,6 @@ body{
     color:var(--color-1);
 }
 
-
 /* ===== S-LEFT RESPONSIVE ===== */
 
 /*ECRANS*/
@@ -505,8 +489,7 @@ body{
         margin-top: 15px;
         margin-bottom: 15px;
         width: 100%;
-    }
-    
+    }  
 }
 @media screen and (max-width: 750px) {
     .s-left-card {
@@ -530,10 +513,6 @@ body{
         margin-top: 25px;
         font-size: 2em;
     }
-}
-
-/*MOBILES*/   
-@media screen and (max-width: 768px) {
 }
 
 /* ============================================================================================== */
@@ -644,7 +623,7 @@ body{
         justify-content: space-between;
     }
 }
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1260px){
     .s-right {
         width: 100%;
     }
@@ -652,7 +631,6 @@ body{
         display: flex;
         flex-direction: row;
     }
-    
 }
 @media screen and (max-width: 1255px){
     .s-right{
@@ -664,9 +642,12 @@ body{
     flex-direction: column;
    } 
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 850px){
     .s-right-title {
         font-size: 19px;
+    }
+    .s-right-card{
+        width: 95%;
     }
     .s-right-card-text {
         font-size: 10px;
@@ -674,7 +655,6 @@ body{
     .s-right-card-text span{
         font-size: 10px;
     }
-    
 }
 
 /* ============================================================================================== */
@@ -716,6 +696,7 @@ body{
     justify-content: flex-start;
     background-color: var(--color-4);
     width: 100%;
+    padding-bottom: 20px;
     border-radius: 15px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     overflow: hidden;
@@ -728,32 +709,63 @@ body{
 }
 .activites-card-image {
     margin: 0;
-    background-color: red;
-    height: 90%;
+    height: 100%;
     width: 100%;
     margin-bottom: 3%;
 }
 .card-image-two{
-    height: 80%;
+    height: 90%;
 }
 .activites-card-image img {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
-.main-activites-card-title {
+.activites-card-image figcaption {
     font-size: 2em;
     font-weight: bolder;
     padding-left: 3%;
-    margin: 0;
 }
 
 /* ===== ACTIVITES RESPONSIVE ===== */
-@media screen and (max-width: 1429px){}
-@media screen and (max-width: 1260px) {}
-@media screen and (max-width: 1255px){}
-@media screen and (max-width: 1000px){}
-@media screen and (max-width: 850px) {}
+@media screen and (max-width: 1429px){
+    
+    .main-activites-wrapper {
 
+        width: 75%;
+        flex-direction: column;
+        row-gap: 20px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cards-two{
+        flex-direction: row;
+        column-gap: 20px;
+    }
+}
+@media screen and (max-width: 850px) {
+    
+    .main-activites-card {
+        max-height: 373px;
+        width: 100%;
+    }
+    .main-activites-wrapper{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .cards-two{
+        flex-direction: column;
+    }
+    .card-image-two{
+        max-height: 80%;
+    }
+    .activites-card-image img {
+        min-width: 100%;
+        max-height: 350px;
+    }
+}
 
 /* ============================================================================================== */
 /* ====================================  FOOTER STYLES  ========================================= */
