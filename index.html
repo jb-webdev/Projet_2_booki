@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Style css -->
     <link rel="stylesheet" href="./styles/normalize.min.css">
-    <link rel="stylesheet" href="./styles/index.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <!-- GoogleFonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,77 +20,83 @@
 <body>
     <!-- HEADER -->
     <header id="header">
-        <a href="index.html" class="link-logo">
-            <img class="link-logo-img" 
-                src="./img/images/logo/Booki@3x.png" 
-                alt="Logo application Booki"
-                >
-        </a>
-        <nav class="nav">
-            <ul class="nav-ul">
-                <li class="nav-li">
-                    <a href="#hebergements" class="nav_link">Hébergements</a>
-                </li>
-                <li class="nav-li">
-                    <a href="#activites" class="nav_link">Activités</a>
-                </li>
-            </ul>
-        </nav>
+      
+            <a href="index.html" class="link-logo">
+                <img class="link-logo-img" 
+                    src="./img/images/logo/Booki.png" 
+                    alt="Logo application Booki"
+                    >
+                <img class="small-screen-img" 
+                    src="./img/images/logo/Booki@3x.png" 
+                    alt="Logo application Booki"
+                > 
+            </a>
+            <nav class="nav">
+                <ul class="nav-ul">
+                    <li class="nav-li">
+                        <a href="#hebergements" class="nav_link">Hébergements</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="#activites" class="nav_link">Activités</a>
+                    </li>
+                </ul>
+            </nav>
     </header>
     <!--Main-->
     <main id="main">
-        <!--Aside-->
-        <aside class="main-aside">
-            <h1 class="main-title">Trouver votre hébergement pour des vacances de reves</h1>
-            <p class="main-aside-text">En plein centre ville ou en pleine nature</p>
-            <form class="main-form" method="post">
-                <span class="main-form-span">
+        <!--s-filter-->
+        <section class="s-hero">
+            <h1 class="s-hero-title">Trouver votre hébergement pour des vacances de reves</h1>
+            <p class="s-hero-text">En plein centre ville ou en pleine nature</p>
+            <form class="s-hero-form" method="post">
+                <span class="s-hero-form-span">
                     <i class="fas fa-location-dot"></i>
                 </span>
-                <input class="main-form-input" 
+                <input class="s-hero-form-input" 
                     type="text" 
                     value="" />
-                <button class="main-form-button" type="submit" >
-                    <span class="main-form-button-text">Rechercher</span>
+                <button class="s-hero-form-button" type="submit" >
+                    <span class="s-hero-form-button-text">Rechercher</span>
                     <i class="fas fa-magnifying-glass"></i>
                 </button>
             </form>
-            <div class="main-filter">
-                <p class="main-filter-title">Filtre</p>
-                <div class="main-filter-wrapper">
-                    <div class="main-filter-item">
-                        <span class="main-filter-item-boxIcon">
+
+            <div class="s-hero-filter">
+                <p class="s-hero-filter-title">Filtre</p>
+                <div class="s-hero-filter-wrapper">
+                    <div class="s-hero-filter-item">
+                        <span class="s-hero-filter-item-boxIcon">
                             <i class="fas fa-money-bill-wave"></i>
                         </span>
-                        <p class="main-filter-item-text">Economique</p>
+                        <p class="s-hero-filter-item-text">Economique</p>
                     </div>
-                    <div class="main-filter-item">
-                        <span class="main-filter-item-boxIcon">
+                    <div class="s-hero-filter-item">
+                        <span class="s-hero-filter-item-boxIcon">
                             <i class="fas fa-child"></i>
                         </span>
-                        <p class="main-filter-item-text">Familliale</p>
+                        <p class="s-hero-filter-item-text">Familliale</p>
                     </div>
-                    <div class="main-filter-item">
-                        <span class="main-filter-item-boxIcon">
+                    <div class="s-hero-filter-item">
+                        <span class="s-hero-filter-item-boxIcon">
                             <i class="fas fa-heart"></i>
                         </span>
-                        <p class="main-filter-item-text">Romantique</p>
+                        <p class="s-hero-filter-item-text">Romantique</p>
                     </div>
-                    <div class="main-filter-item">
-                        <span class="main-filter-item-boxIcon">
+                    <div class="s-hero-filter-item">
+                        <span class="s-hero-filter-item-boxIcon">
                             <i class="fas fa-dog"></i>
                         </span>
-                        <p class="main-filter-item-text">Animaux autorisés</p>
+                        <p class="s-hero-filter-item-text">Animaux autorisés</p>
                     </div>
                 </div>
             </div>
-            <p class="main-info-text">
-                <span class="main-aside-span-icon">
+            <p class="s-hero-info-text">
+                <span class="s-hero-span-icon">
                     <i class="fas fa-info "></i>
                 </span>
                 Plus de 500 logements sont disponible dans cette ville
             </p>
-        </aside>
+        </section>
         <!--Main Article-->
         <div class="main-article">
             <!--S-LEFT-->
@@ -185,7 +191,7 @@
                 <a href="#" class="s-left-deploy">Afficher Plus</a>
             </article>
             <!--S-RIGHT-->
-            <article class="s-right">
+            <aside class="s-right">
                 <div class="s-right-box-title">
                     <h2 class="s-right-title">Les plus populaires</h2>
                     <span class="s-right-title-span"><i class="fas fa-chart-line"></i></span>
@@ -246,7 +252,7 @@
                         </div>
                     </a>
                 </div>
-            </article>
+            </aside>
         </div> 
         <!-- Article-ACTIVITES -->
         <article class="main-activites" id="activites">
